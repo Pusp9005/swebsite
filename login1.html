@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="img"></div>
+      <div class="text-container">
+        <h1>My Software Company</h1>
+        <p>Login here</p>
+      </div>
+      <div class="login-container">
+        <form action="#">
+          <h1>Login</h1>
+          <label for="username"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="username" required>
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" required>
+          <button type="submit">Login</button>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </form>
+      </div>
+    </div>
+
+
+    <style>
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  background-image: url('Tripathi/img/hero-img.png');
+  background-size: cover;
+  width: 50%;
+  height: 90%;
+  position: absolute;
+  left: 0;
+  margin-left: 2%;
+}
+
+.login-container {
+  background-color: #fff;
+  width: 40%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: 50%;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: #ff99cc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input[type="checkbox"] {
+  margin-top: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+
+
+.text-container {
+    position: absolute;
+    top: 70%;
+    left:30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  
+  /* Set up the styles for the text */
+  .text-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: pink;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    font-family: Verdana;
+    animation: typing 4s steps(30, end), /* Typewriter animation */
+               blink-caret .5s step-end infinite; /* Blinking cursor animation */
+  }
+  
+  /* Typewriter animation */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Blinking cursor animation */
+
+  
+  .text-container p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    background-image: linear-gradient(60deg, #E21143, #FFB03A);
+    margin-left: 30px;
+    text-align: center;
+    font-family: Verdana;
+    font-weight: 700;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    animation: typing-p 4s steps(30, end), /* Typewriter animation */
+               blink-caret .5s step-end infinite;
+  }
+  
+  /* Typewriter animation for p tag */
+  @keyframes typing-p {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+    </style>
+  </body>
+</html>
